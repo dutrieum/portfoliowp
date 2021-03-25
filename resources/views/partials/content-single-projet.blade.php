@@ -41,6 +41,6 @@
             {!! wp_get_attachment_image( get_field("second_image")["id"], "thumbnail" ) !!}
         </div>
     </div>
-    <a>{{ the_field('link') }}</a>
-    <a href="{{ the_field('link','url') }}" target="{{ the_field('link','target') }}">{{ the_field('link','title') }}</a>
+    @php $link_media = get_field('external_link') @endphp
+    <a href="{{ $link_media['url'] }}" target="{{ $link_media['target'] }}">{{ $link_media['title'] }}</a>
 </main>
