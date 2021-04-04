@@ -28,7 +28,7 @@
     </div>
     <div class="image-text">
         <div class="image">
-            {!! wp_get_attachment_image( get_field("first_image")["id"], "thumbnail" ) !!}
+            {!! wp_get_attachment_image( get_field("first_image")["id"]) !!}
         </div>
         <div class="text">
             <p>{{the_field('first_description')}}</p>
@@ -38,9 +38,11 @@
             <p>{{the_field('second_description')}}</p>
         </div>
         <div class="image">
-            {!! wp_get_attachment_image( get_field("second_image")["id"], "thumbnail" ) !!}
+            {!! wp_get_attachment_image( get_field("second_image")["id"]) !!}
         </div>
     </div>
     @php $link_media = get_field('external_link') @endphp
-    <a href="{{ $link_media['url'] }}" target="{{ $link_media['target'] }}">{{ $link_media['title'] }}</a>
+    @if ($link_media != null)
+        <a href="{{ $link_media['url'] }}" target="{{ $link_media['target'] }}">{{ $link_media['title'] }}</a>
+    @endif
 </main>
