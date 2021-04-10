@@ -1,0 +1,54 @@
+main {
+  color: $white-color;
+  margin-bottom: 30px;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    color: $light-color;
+  }
+
+  .cont_first_half {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .cont_second_half {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .category {
+    display: flex;
+    margin-bottom: 30px;
+
+    p {
+      margin-top: 0.8rem;
+      margin-left: 2%;
+    }
+  }
+
+  .image-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    .text {
+      width: 50%;
+    }
+  }
+
+  .projet_link {
+    color: $dark-color;
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+
+  .projet_link:hover {
+    color: $white-color;
+  }
+}

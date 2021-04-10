@@ -1,0 +1,41 @@
+footer.content-info {
+  color: $white-color;
+
+  .container {
+    max-width: none;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: $light-color;
+
+    .footer_info {
+      display: flex;
+      justify-content: center;
+
+      .info_single {
+        text-align: left;
+        border-right: 1px solid $white-color;
+        padding: 0 10%;
+      }
+
+      .info_single:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .credits {
+    margin: 10px 0;
+  }
+}
