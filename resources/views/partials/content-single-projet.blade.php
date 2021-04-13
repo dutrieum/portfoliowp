@@ -51,4 +51,5 @@
     @if ($link_media != null)
         <a href="{{ $link_media['url'] }}" target="{{ $link_media['target'] }}" class="projet_link">{{ $link_media['title'] }}</a>
     @endif
+    <a href="{{ home_url('/projet/') }}" class="go_back"><img src="{{ get_template_directory_uri() }}/assets/images/left-arrow.svg" href="Back arrow" class="arrow">Revenir aux projets</a>
 </main>

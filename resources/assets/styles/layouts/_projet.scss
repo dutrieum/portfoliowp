@@ -51,4 +51,18 @@ main {
   .projet_link:hover {
     color: $white-color;
   }
+
+  .arrow {
+    width: 4%;
+    margin-right: 20px;
+  }
+
+  .go_back {
+    color: $white-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
