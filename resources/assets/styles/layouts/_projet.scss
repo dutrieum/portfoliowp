@@ -10,6 +10,10 @@ main {
     color: $light-color;
   }
 
+  p {
+    font-size: 18px;
+  }
+
   .cont_first_half {
     display: flex;
     justify-content: space-between;
