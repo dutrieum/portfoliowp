@@ -6,7 +6,8 @@
     <div class="single-article-preview">
         {!! wp_get_attachment_image( get_field("first_image")["id"], "medium" ) !!}
         <div>
-          <p>{{the_field('first_description')}}</p>
+          @php $article_data = substr(get_field('first_description'), 0, 165); @endphp
+          <p>{{ $article_data }}...</p>
           <a href="{{ get_permalink() }}">Découvrir</a>
         </div>
     </div>
